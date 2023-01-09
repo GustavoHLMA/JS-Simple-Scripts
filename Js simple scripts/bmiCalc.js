@@ -1,7 +1,12 @@
 function bmiCalculator(weight, height) {
-  const bmi = (weight/(height**2));
-  return bmi;
+  const bmi = Math.floor((weight/(height*height)));
+  if (bmi<18.5) {
+      return "Your BMI is " + bmi + ", so you are underweight.";
+  } else if (bmi>18.5 && bmi <24.9){
+      return "Your BMI is " + bmi + ", so you have a normal weight.";
+  } else {
+        return "Your BMI is " + bmi + ", so you are overweight.";
+    }
 }
 
-const bmiCalc = bmiCalculator(65, 1.8);
-console.log(Math.floor(bmi))
+bmiCalculator(60,2);
