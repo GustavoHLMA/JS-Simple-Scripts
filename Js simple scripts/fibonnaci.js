@@ -1,23 +1,17 @@
-function fibonacciGenerator(num) {
-  fibboList = [0, 1];
+function fibonacciGenerator(n) {
+  let fibboList = [0, 1];
   
-  if (num === 0) {
+  if (n === 1) {
     return fibboList.slice(0,1);
 
-  } else if (num === 1) {
-      return fibboList.slice(1,2);
+  } else if (n === 2) {
+      return fibboList.slice(0,2);
     
   } else {
-      for (let n = 0; n <= num; n++) {
-        prevNum = n + (n + 1)
-        fibboList.push(prevNum);
-        return fibboList;
-
+      for (let num = 0; num < n - 2; num++) {
+        let prevNum = fibboList[num] + fibboList[num + 1];
+        fibboList.push(prevNum);      
+      } 
+      return fibboList
 }
-    
   }
-    
-
-}
-
-fibonacciGenerator(4)
