@@ -7,7 +7,7 @@ function loveCalc(user, crush) {
 
 const user = prompt("Type your name: ");
 const crush = prompt ("Type your crush name: ");
-compatibility = loveCalc(user, crush);
+const compatibility = loveCalc(user, crush);
 alert(user + " compatibility with " + crush + " is " + compatibility + "%");
 
 if (compatibility > 50) {

@@ -1,9 +1,9 @@
 function whosPaying(names) {
-  nameList = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]
-  nameNum = nameList.length
-  randomName = Math.random() * nameNum
-  guest = Math.floor(randomName)
-  return nameList[guest]
+  let nameList = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+  let nameNum = nameList.length;
+  let randomName = Math.random() * nameNum;
+  let guest = Math.floor(randomName);
+  return nameList[guest];
 }
 
-whosPaying()
+whosPaying();

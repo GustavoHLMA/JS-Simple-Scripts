@@ -6,6 +6,7 @@ const user = firstLetterCap + userNotCap.slice(1, userNotCap.lenght);
 
 
 if (guestList.includes(user)) {
-  alert("Welcome " + user)
-} else 
-  alert("Sorry " + user + " your name isn't on the guestlist")
+  alert("Welcome " + user);
+} else {
+  alert("Sorry " + user + " your name isn't on the guestlist");
+}
